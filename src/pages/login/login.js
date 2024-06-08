@@ -17,7 +17,10 @@ const Login = () => {
         if (!email && !password) {
             return;
         }
-        fetch(`http://localhost:1400/api/auth/login`, {
+        
+        const link='https://image-backend-7cg1.onrender.com';
+
+            fetch(`${link}/api/auth/login`, {
             headers: {
                 "Content-type": "application/json",
             },
