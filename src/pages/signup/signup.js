@@ -10,7 +10,9 @@ const Signup = () => {
             return;
         }
         try {
-            fetch(`http://localhost:1400/api/auth/signup`, {
+            const link='https://image-backend-7cg1.onrender.com';
+
+            fetch(`${link}/api/auth/signup`, {
                 headers: {
                     "Content-Type": "application/json",
                 },
